@@ -1,0 +1,12 @@
+.About-conent{
+
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 50px;
+        background-color: black;
+    }
+}

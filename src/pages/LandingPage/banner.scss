@@ -1,0 +1,42 @@
+.header-img-container{
+    position: relative;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        height: 101px;
+        width: 84px;
+        top: 4%;
+        right: 45%;
+        background-color: red;
+        -webkit-clip-path: polygon(15% 0, 0 74%, 99% 99%);
+        clip-path: polygon(15% 0, 0 74%, 99% 99%);
+
+
+        z-index: 999;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        height: 109.7px;
+        width: 133.22px;
+        bottom: 27%;
+        right: 23%;
+        background-color: #1072BCed;
+        -webkit-clip-path: polygon(100% 12%, 0 42%, 55% 100%);
+        clip-path: polygon(100% 12%, 0 42%, 55% 100%);
+
+
+        z-index: 999;
+    }
+    .img{
+        // -webkit-mask-image: url(../../assist/Images/masker.png);
+        // mask-image: url(../../assist/Images/masker.png);
+        position: relative;
+        -webkit-clip-path: polygon(0 7%, 35% 100%, 100% 47%);
+        clip-path: polygon(0 7%, 35% 100%, 100% 47%);
+
+        
+    }
+}
