@@ -44,7 +44,7 @@ const Flexservices = () => {
     </>
   );
   return (
-    <div className="bg-[#E4F4FF] pt-[52px] pb-[45.43px]">
+    <div className="container bg-[#E4F4FF] pt-[52px] pb-[45.43px]">
       <div className="max-w-[799px] flex justify-between mx-auto">
         {services}
       </div>
