@@ -1,6 +1,7 @@
 import React from "react";
 // import cardImage1 from "../assist/Images/cardImage1.png";
-const Details = ({ details }) => {
+const Details = ({ details, left }) => {
+  console.log(left);
   return (
     <div className="about-content flex justify-around">
       <div className="About-conent w-[335px]">
@@ -22,7 +23,11 @@ const Details = ({ details }) => {
       </div>
       <div className="About-desc-content w-[599px]">
         <div className="about-head w-[545px] pb-3">
-          <h1 className="text-[36px] text-[#004A80] font-[700] leading-[43.2px]">
+          <h1
+            className={`text-[36px] text-[#004A80] font-[700] leading-[43.2px] ${
+              left === true && "self-end"
+            }`}
+          >
             {/* We Help to grow your buisness */}
             {details.leftHeading}
           </h1>

@@ -23,14 +23,61 @@ const Testimonials = () => {
     // button: "Our Works",
   };
   return (
-    <div className="container pt-[121px] pb-[146px]">
-      <Details details={TestimonialsData} />
-
+    <div className="container pt-[121px]">
+      <Details details={TestimonialsData} left={true} />
       <div className="grid grid-cols-2 pt-5">
         <div className="col-1 pl-[203px]">
           <Testimonialsslider testomonialDetail={TestimonialSliderData} />
         </div>
-        <div className="col-1 bg-green-600">hellow</div>
+        <div className="col-1">
+          <div className="testo-form">
+            <div className="testo-content">
+              <div className="testo-topic">
+                <h3 className="font-[500] text-[16px] leading-[27px] text-[#1072BC]">
+                  Hey,Love our work ?
+                </h3>
+              </div>
+              <div className="testo-topic-desc">
+                <h3 className="font-[500] text-[18px] leading-[27px]">
+                  Submit your testimonial here if you’ve worked with us
+                </h3>
+              </div>
+            </div>
+            <div className="main-form">
+              <form className="bg-white rounded  pt-6 pb-8 mb-4">
+                <div className="mb-4">
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm focus:pl-8 focus:transition-all"
+                  />
+                </div>
+                <div className="mb-4">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm focus:pl-8 focus:transition-all"
+                  />
+                </div>
+                <div className="mb-[60px]">
+                  <textarea
+                    type="text-area"
+                    placeholder="Comments"
+                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm pb-[63px] focus:pl-8 focus:transition-all"
+                  />
+                </div>
+                <div className="button">
+                  <button
+                    className="bg-transparent hover:bg-[#ED1C24] text-[#ED1C24] font-semibold hover:text-white py-2 px-4 transition-all hover:px-8 border border-black hover:border-transparent rounded "
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
