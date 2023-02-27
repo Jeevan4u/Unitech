@@ -30,7 +30,7 @@ const About = () => {
   ];
 
   const Cards = (
-    <div className="Cards flex justify-between pt-10 pb-[129px]">
+    <div className="Cards flex justify-between pt-10 pb-[129px] tablet:flex-wrap">
       {CardsItems.map((data, i) => {
         return (
           <div className="cards-wrapper w-[235px]" key={i}>
@@ -82,7 +82,7 @@ const About = () => {
           // desc1={desc1}
           details={detailsData}
         />
-        <div className="main-cards-wrapper">{Cards}</div>
+        <div className="main-cards-wrapper tablet:px-10">{Cards}</div>
       </div>
     </div>
   );

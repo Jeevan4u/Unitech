@@ -3,7 +3,7 @@ import Pause from "../assist/Images/Pause.png";
 const Testimonialsslider = ({ testomonialDetail }) => {
   console.log(testomonialDetail.topic);
   return (
-    <div className="testomonitalCard">
+    <div className="testomonitalCard px-[10px]">
       <div className="backdrop-img ">
         <div className="topic  relative max-w-[253px]">
           <h1 className="text-[32px] leading-[38.4px] font-[600]">

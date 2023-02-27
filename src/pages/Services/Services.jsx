@@ -48,11 +48,11 @@ const Services = () => {
   return (
     <>
       <div className="container bg-[#F2F2F2] pb-[175px]">
-        <div className=" pt-[139px] pl-[225px] pb-[80px]">
+        <div className=" pt-[139px] pl-[225px] pb-[80px] tablet:pl-[60px]">
           <Details details={servicesData} />
         </div>
         <div className="sub-container max-w-[1123px] mx-auto">
-          <div className="servicesCards flex flex-wrap justify-between gap-20">
+          <div className="servicesCards flex flex-wrap justify-between gap-20 tablet:justify-center">
             {servicesCardDetails.map((data, i) => (
               <ServicesLists servicesDetails={data} />
             ))}

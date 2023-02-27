@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="container bg-[#004A80] overflow-hidden">
       <div className="footer__container pt-[169px] max-w-[1200px] mx-auto">
-        <div className="footer__contents grid grid-cols-3 relative">
+        <div className="footer__contents grid grid-cols-3 relative tablet:px-10">
           <div className="col-1 ">
             <div className="img-container mb-[22px] w-[206px]">
               <img src={unitechlogoWhite} alt="" className="object-cover" />
@@ -22,7 +22,7 @@ const Footer = () => {
                 standard; that stands simple and grand at the same time.
               </h3>
             </div>
-            <div className="contact-wrapper">
+            <div className="contact-wrapper ">
               <div className="h2 font-[600] text-[18px] leading-[27px] text-white">
                 +977 14 568111, 4593222 <br />
                 hello@unitechmedia.com.np <br />

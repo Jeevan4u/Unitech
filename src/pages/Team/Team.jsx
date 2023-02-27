@@ -13,20 +13,20 @@ const Team = () => {
   };
   return (
     <div className="container">
-      <div className="grid grid-cols-2">
-        <div className="col-span-1">
+      <div className="grid  tablet:grid-cols-1 desktop:grid-cols-2">
+        <div className="col-span-1 tablet:pt-[123px] desktop:pt-0">
           <div className="img-container">
-            <img src={Teams} alt="" />
+            <img src={Teams} alt="" className="mx-auto object-cover" />
           </div>
         </div>
-        <div className="col-span-1 pt-[123px] pl-[61px] bg-[#F2F2F2] overflow-hidden">
-          <div className="flex  mb-[91px]">
+        <div className="col-span-1 pt-[123px] pl-[61px] bg-[#F2F2F2] tablet:pt-[6rem] pl-10 desktop:pt-16">
+          <div className="flex  mb-[91px] tablet:mb-3">
             <Details details={TeamData} />
           </div>
-          <h1 className="text-[36px] font-[700] leading-[43px] text-[#004A80] w-[323px] mb-[105px]">
+          <h1 className="text-[36px] font-[700] leading-[43px] text-[#004A80] w-[323px] mb-[105px] tablet:mb-8 mx-auto mt-32">
             Team work is our greatest asset
           </h1>
-          <div className="button-container flex">
+          <div className="button-container flex tablet:justify-center my-10">
             <button className="bg-[#ED1C24] text-white py-[16px] px-[24px] appearance-none">
               Know our team
             </button>

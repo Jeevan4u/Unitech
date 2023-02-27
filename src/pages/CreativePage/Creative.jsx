@@ -24,19 +24,23 @@ const Creative = () => {
         sub: "Intercation",
         para: "Deep study of product, ideal customers and competitors for setting goals.",
       },
+      {
+        imgs: cardImage1,
+        cicon: cardIcon1,
+        main: "Understanding",
+        sub: "Intercation",
+        para: "Deep study of product, ideal customers and competitors for setting goals.",
+      },
     ],
   };
 
   return (
     <>
-      <div className="max-w-[1440px] pt-[161px] pl-[149px] pb-[162px]">
+      <div className="container pt-[161px] ">
         <Details details={data} />
-        <div className="content-wrapper flex justify-start pl-20">
-          <div className="left-content text-[#004A80] text-[36px] font-[700] w-[343.96px]">
+        <div className="content-wrapper flex justify-around px-10 mt-6">
+          <div className="left-content text-[#004A80] text-[36px] font-[700]">
             <h1>Ideas into reality</h1>
-          </div>
-          <div className="right-content">
-            <img src={Cricle} alt="" />
           </div>
         </div>
         <div className="line pt-20 pl-20 ">

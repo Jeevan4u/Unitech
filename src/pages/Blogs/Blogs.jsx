@@ -41,8 +41,8 @@ const Blogs = () => {
       <div className="blog-container-fix max-w-[909px] mx-auto mt-[140px] mb-[109px]">
         <Details details={blogData} />
       </div>
-      <div className="blogmaincards max-w-[1066px] mx-auto mb-[211px]">
-        <div className="flex-container flex flex-wrap">
+      <div className="blogmaincards mb-[211px]">
+        <div className="flex-container flex justify-center gap-10 flex-wrap">
           {BlogitemsData.map((data, i) => {
             return (
               <>

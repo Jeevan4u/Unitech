@@ -55,7 +55,7 @@ const Product = () => {
     },
   ];
   return (
-    <div className="container bg-slate-700 flex flex-wrap">
+    <div className="container flex flex-wrap justify-center gap-5">
       {dataObj.map((item) => (
         <Productlists data={item} />
       ))}

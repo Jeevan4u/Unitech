@@ -25,8 +25,8 @@ const Testimonials = () => {
   return (
     <div className="container pt-[121px]">
       <Details details={TestimonialsData} left={true} />
-      <div className="grid grid-cols-2 pt-5">
-        <div className="col-1 pl-[203px]">
+      <div className="grid grid-cols-2 pt-5 tablet:px-[10px]">
+        <div className="col-1 pl-[203px] tablet:pl-[50px]">
           <Testimonialsslider testomonialDetail={TestimonialSliderData} />
         </div>
         <div className="col-1">
@@ -49,21 +49,21 @@ const Testimonials = () => {
                   <input
                     type="text"
                     placeholder="Username"
-                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm focus:pl-8 focus:transition-all"
+                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm focus:pl-8 focus:transition-all tablet:w-full"
                   />
                 </div>
                 <div className="mb-4">
                   <input
                     type="email"
                     placeholder="Email"
-                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm focus:pl-8 focus:transition-all"
+                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm focus:pl-8 focus:transition-all tablet:w-full"
                   />
                 </div>
                 <div className="mb-[60px]">
                   <textarea
                     type="text-area"
                     placeholder="Comments"
-                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm pb-[63px] focus:pl-8 focus:transition-all"
+                    className="w-[480px] py-[19px] pl-[8px] appearance-none border rounded text-gray-700 focus:outline-none focus:shadow-sm pb-[63px] focus:pl-8 focus:transition-all tablet:w-full"
                   />
                 </div>
                 <div className="button">

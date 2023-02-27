@@ -14,6 +14,7 @@ import Partners from './pages/Partners/Partners';
 import Blogs from './pages/Blogs/Blogs';
 import Staytuned from './pages/StayTuned/Staytuned';
 import Footer from './layout/Footer';
+import Login from "./pages/login/Login"
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
       <Blogs/>
       <Staytuned/>
       <Footer/>
+      {/* <Login/> */}
     </div>
   );
 }

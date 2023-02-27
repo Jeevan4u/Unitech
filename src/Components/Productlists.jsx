@@ -2,7 +2,7 @@ import React from "react";
 
 const Productlists = ({ data }) => {
   return (
-    <div className="img-container relative group overflow-hidden">
+    <div className="img-container relative group overflow-hidden flex-grow-1">
       <img
         src={data.img}
         alt=""

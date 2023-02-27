@@ -10,7 +10,7 @@ const Portfolio = () => {
     button: "Our Works",
   };
   return (
-    <div className="Portfolio-wrapper container content-wrapper max-w-[1132px] mx-auto pt-[120px] pb-[80px] ">
+    <div className="Portfolio-wrapper container content-wrapper max-w-[1132px] mx-auto pt-[120px] pb-[80px]">
       <Details details={portfolioData} />
     </div>
   );
