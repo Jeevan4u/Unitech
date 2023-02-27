@@ -9,8 +9,8 @@ import "swiper/css";
 // import cardImage1 from "../assist/Images/cardImage1.png";
 const Details = ({ details, left }) => {
   return (
-    <div className="about-content flex justify-around tablet:grid grid-cols-2 px-10">
-      <div className="About-conent w-[335px] tablet:w-full px-3">
+    <div className="about-content flex flex-wrap px-10 py-10 tablet:flex-nowrap desktop:flex-nowrap desktop:justify-around tablet:justify-center">
+      <div className="About-conent desktop:w-[335px] px-3">
         <h3 className="text-[32px] font-[700] pt-2">
           {/* About Us */} {details.heading}
         </h3>
@@ -27,8 +27,8 @@ const Details = ({ details, left }) => {
           </div>
         )}
       </div>
-      <div className="About-desc-content w-[599px] tablet:w-full">
-        <div className="about-head w-[545px] pb-3 tablet:w-full">
+      <div className="About-desc-content w-[599px]  pt-8">
+        <div className="about-head desktop:w-[545px] pb-3 tablet:w-full">
           <h1
             className={`text-[36px] text-[#004A80] font-[700] leading-[43.2px] ${
               left === true && "self-end"

@@ -5,7 +5,7 @@ import "./banner.css";
 const Banner = () => {
   return (
     <div className="header-wrapper  bg-[#E4F4FF]">
-      <div className="header-contents max-w-[1248px] mx-auto flex justify-between">
+      <div className="header-contents max-w-[1248px] mx-auto flex justify-between phone:">
         <div className="header-texts pt-[228px] tablet:pt-[128px] pl-[80px]">
           <div className="header-text">
             <p className="text-[15.45px] tracking-[0.15em] leading-[23px] text-[#707070] tablet:text-[14px]">

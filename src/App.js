@@ -1,39 +1,24 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css'
+import AboutPage from './pages/AboutPage/AboutPage';
+import Home from './pages/Home/Home';
 import Navbar from './layout/Navbar';
-import Banner from './pages/LandingPage/Banner';
-import About from './pages/About/About';
-import Flexservices from './pages/Flexservices/Flexservices';
-import Portfolio from './pages/Portfolio/Portfolio';
-import Product from './pages/Product/Product';
-import Creative from './pages/CreativePage/Creative';
-import Services from './pages/Services/Services';
-import Testimonials from "./pages/Testimonials/Testimonials"
-import Team from "./pages/Team/Team"
-import Client from './pages/Clients/Client';
-import Partners from './pages/Partners/Partners';
-import Blogs from './pages/Blogs/Blogs';
-import Staytuned from './pages/StayTuned/Staytuned';
 import Footer from './layout/Footer';
-import Login from "./pages/login/Login"
+import WorkPage from "./pages/WorkPage/Work"
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Banner />
-      <About/>
-      <Flexservices/>
-      <Portfolio/>
-      <Product/>
-      <Creative/>
-      <Services/>
-      <Testimonials/>
-      <Team/>
-      <Client/>
-      <Partners/>
-      <Blogs/>
-      <Staytuned/>
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+            <Route  index element = {<Home/>} />
+            <Route path='/about'  element = {<AboutPage/>} />
+            <Route path='/work'  element = {<WorkPage/>} />
+        </Routes>
       <Footer/>
-      {/* <Login/> */}
+
+      </BrowserRouter>
+      
     </div>
   );
 }
