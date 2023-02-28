@@ -4,7 +4,10 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import Home from './pages/Home/Home';
 import Navbar from './layout/Navbar';
 import Footer from './layout/Footer';
-import WorkPage from "./pages/WorkPage/Work"
+import ServicesPage from './pages/ServicesPage/ServicesPage';
+import CarreerPage from './pages/CarreerPage/CarreerPage';
+import BlogIndex from './pages/BlogPage/BlogIndex';
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +16,9 @@ function App() {
         <Routes>
             <Route  index element = {<Home/>} />
             <Route path='/about'  element = {<AboutPage/>} />
-            <Route path='/work'  element = {<WorkPage/>} />
+            <Route path='/services'  element = {<ServicesPage/>} />
+            <Route path='/career'  element = {<CarreerPage/>} />
+            <Route path='/blog'  element = {<BlogIndex/>} />
         </Routes>
       <Footer/>
 

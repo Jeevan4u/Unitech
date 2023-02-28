@@ -14,7 +14,7 @@ const Client = () => {
   };
   return (
     <div className="container">
-      <div className="client-fix max-w-[859.26px] mx-auto pt-[146px] mb-[107px]">
+      <div className="client-fix  pt-[146px] desktop:px-28 mb-[107px]">
         <Details details={ClientData} />
       </div>
       <div className="Client-img-container max-w-[1000px] mx-auto mb-[155px]">

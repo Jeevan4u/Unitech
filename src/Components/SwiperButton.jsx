@@ -5,8 +5,13 @@ export default function SlideNextButton() {
   const swiper = useSwiper();
 
   return (
-    <button onClick={() => swiper.slideNext()}>
-      <img src={Cricle} alt="" />
+    <button className="w-full mt-10" onClick={() => swiper.slideNext()}>
+      <img
+        src={Cricle}
+        alt=""
+        className="tablet:mx-auto desktop:mx-0
+      "
+      />
     </button>
   );
 }

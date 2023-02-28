@@ -6,7 +6,7 @@ const Productlists = ({ data }) => {
       <img
         src={data.img}
         alt=""
-        className="group-hover:scale-125 transition ease-in-out duration-1500"
+        className="group-hover:scale-[2] transition ease-in-out duration-500"
       />
       <div className="text-overlay absolute w-full h-full bg-black opacity-[0] top-0 left-0 flex flex-col place-content-center transition ease-in-out delay-75  group-hover:opacity-[0.75] ">
         <h3 className="text-center text-white text-[18px] font-[700] leading-10 tracking-widest ">

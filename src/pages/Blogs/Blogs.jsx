@@ -38,7 +38,7 @@ const Blogs = () => {
   ];
   return (
     <div className="container">
-      <div className="blog-container-fix max-w-[909px] mx-auto mt-[140px] mb-[109px]">
+      <div className="blog-container-fix  mt-[140px] mb-[109px]">
         <Details details={blogData} />
       </div>
       <div className="blogmaincards mb-[211px]">

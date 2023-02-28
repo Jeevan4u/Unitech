@@ -24,12 +24,12 @@ const Testimonials = () => {
   };
   return (
     <div className="container pt-[121px]">
-      <Details details={TestimonialsData} left={true} />
-      <div className="grid grid-cols-2 pt-5 tablet:px-[10px]">
-        <div className="col-1 pl-[203px] tablet:pl-[50px]">
+      <Details details={TestimonialsData} left={true} center={true} />
+      <div className="grid desktop:grid-cols-2 pt-5 place-items-center tablet:px-[10px] tablet:grid-cols-1">
+        <div className="col-1 pl-[203px] tablet:pl-[50px] mb-10">
           <Testimonialsslider testomonialDetail={TestimonialSliderData} />
         </div>
-        <div className="col-1">
+        <div className="col-1 tablet:mt-10">
           <div className="testo-form">
             <div className="testo-content">
               <div className="testo-topic">

@@ -41,7 +41,7 @@ const AboutImageGallery = () => {
   ];
   return (
     <div className="Image-container desktop:px-[150px]">
-      <div className="img-text-container flex text-center gap-5 flex-wrap justify-center desktop:justify-start mb-[128px]">
+      <div className="img-text-container flex text-center gap-5 flex-wrap justify-center desktop:justify-evenly mb-[128px]">
         {aboutImageData.map((data, i) => (
           <AboutImage aboutImageData={data} />
         ))}

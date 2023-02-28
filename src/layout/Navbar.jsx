@@ -14,6 +14,7 @@ const Navbar = () => {
   ];
 
   const [show, setShow] = useState(false);
+  console.log(show);
   return (
     <>
       <div className="container">
@@ -24,11 +25,10 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`nav-items hidden justify-between items-center w-[737px] tablet:${
-              show === true
-                ? "flex flex-col justify-evenly absolute top-20 left-0 h-screen w-screen bg-white z-[9999] transition-all"
-                : "hidden"
-            }  desktop:flex`}
+            className={`nav-items hidden justify-between items-center  w-[737px]  tablet:${
+              show &&
+              "block tablet:text-center  tablet:absolute tablet:h-screen tablet:w-screen tablet:bg-white"
+            } desktop:flex`}
           >
             {navItems.map((items, i) => {
               return (

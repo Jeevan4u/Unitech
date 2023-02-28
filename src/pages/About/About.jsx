@@ -5,6 +5,7 @@ import Activate from "../../assist/Images/Activation.png";
 import App from "../../assist/Images/App.png";
 import Market from "../../assist/Images/Marketing.png";
 import Details from "../../Components/Details";
+import Cards from "../../Components/Cards";
 const About = () => {
   const CardsItems = [
     {
@@ -29,25 +30,25 @@ const About = () => {
     },
   ];
 
-  const Cards = (
-    <div className="Cards flex justify-between pt-10 pb-[129px] tablet:flex-wrap">
-      {CardsItems.map((data, i) => {
-        return (
-          <div className="cards-wrapper w-[235px]" key={i}>
-            <div className="card-icon py-5">
-              <img src={data.id} alt="" />
-            </div>
-            <div className="crad-title text-[18px] text-[#1072BC] leading-[27px]">
-              {data.title}
-            </div>
-            <div className="card-sub text-[14px] leading-[21px]">
-              {data.sub}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
+  // const Cards = (
+  //   <div className="Cards flex justify-between pt-10 pb-[129px] tablet:flex-wrap">
+  //     {CardsItems.map((data, i) => {
+  //       return (
+  //         <div className="cards-wrapper w-[235px]" key={i}>
+  //           <div className="card-icon py-5">
+  //             <img src={data.id} alt="" />
+  //           </div>
+  //           <div className="crad-title text-[18px] text-[#1072BC] leading-[27px]">
+  //             {data.title}
+  //           </div>
+  //           <div className="card-sub text-[14px] leading-[21px]">
+  //             {data.sub}
+  //           </div>
+  //         </div>
+  //       );
+  //     })}
+  //   </div>
+  // );
 
   // const heading = <>About Us</>;
   // const title = <>WE CREATE SOMETHING VERY TRENDY AND ------ </>;
@@ -82,7 +83,12 @@ const About = () => {
           // desc1={desc1}
           details={detailsData}
         />
-        <div className="main-cards-wrapper tablet:px-10">{Cards}</div>
+        {/* <div className="main-cards-wrapper tablet:px-10">{Cards}</div> */}
+        <div className="main-cards-wrapper flex flex-wrap gap-5 justify-center tablet:px-10 tablet:justify-evenly desktop:justify-evenly">
+          {CardsItems.map((data, i) => (
+            <Cards mainCards={data} />
+          ))}
+        </div>
       </div>
     </div>
   );
