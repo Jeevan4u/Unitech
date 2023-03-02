@@ -13,6 +13,7 @@ const Services = () => {
     // desc1:
     //   "Unitech Media is a mass exposure station, which stands for overall solution regarding branding and activation with concern field specialists for online as well as offline media. We believe that a strong and long-lasting relation is the key to success for every business. It hasbeen our pleasure to help companies in building connection with their clients and keep their clients engaged with the brand. ",
     button: "Explore services",
+    link: "services",
   };
 
   const servicesCardDetails = [

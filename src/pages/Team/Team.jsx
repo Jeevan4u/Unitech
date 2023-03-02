@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Teams from "../../assist/Images/Ourteam.png";
 import Details from "../../Components/Details";
 const Team = () => {
+  const navigation = useNavigate();
   const TeamData = {
     heading: "Our Team",
     title: "People behind all INNOVATIVE IDEAS & creative works ",
@@ -30,7 +32,10 @@ const Team = () => {
             <button className="bg-[#ED1C24] text-white py-[16px] px-[24px] appearance-none">
               Know our team
             </button>
-            <button className="bg-transparent border-[2px] border-[#ED1C24] ml-[20px] text-[#ED1C24] py-[16px] px-[24px] appearance-none">
+            <button
+              className="bg-transparent border-[2px] border-[#ED1C24] ml-[20px] text-[#ED1C24] py-[16px] px-[24px] appearance-none"
+              onClick={() => navigation("/career")}
+            >
               Careers
             </button>
           </div>

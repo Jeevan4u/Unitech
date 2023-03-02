@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="container bg-[#004A80] overflow-hidden">
       <div className="footer__container pt-[169px] max-w-[1200px] mx-auto">
-        <div className="footer__contents grid grid-cols-3 relative tablet:px-10">
+        <div className="footer__contents grid place-items-center laptop:grid-cols-3 relative tablet:px-10 px-5">
           <div className="col-1 ">
             <div className="img-container mb-[22px] w-[206px]">
               <img src={unitechlogoWhite} alt="" className="object-cover" />
@@ -22,7 +22,7 @@ const Footer = () => {
                 standard; that stands simple and grand at the same time.
               </h3>
             </div>
-            <div className="contact-wrapper ">
+            <div className="contact-wrapper text-center my-5">
               <div className="h2 font-[600] text-[18px] leading-[27px] text-white">
                 +977 14 568111, 4593222 <br />
                 hello@unitechmedia.com.np <br />
@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-2 mt-[160px] flex flex-col items-center">
+          <div className="col-2 laptop:mt-[160px] flex flex-col desktop:items-center my-5">
             <div className="h2 font-[600] text-[18px] leading-[27px] text-white mb-[16px]">
               Quick Links
             </div>
@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-3 mt-[200px]">
+          <div className="col-3 laptop:mt-[200px]">
             <h2 className="links font-[600] text-[18px] leading-[27px] text-white mb-[16px]">
               Userful Links
             </h2>

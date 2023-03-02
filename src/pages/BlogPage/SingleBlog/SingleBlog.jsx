@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Authorcard from "../../../Components/Authorcard";
 // import Authorcard from "../../../Components/Authorcard";
 import img1 from "../../../assist/Images/authorIMg.png";
+import FilterCards from "../../../Components/FilterCards";
 
 const SingleBlog = () => {
   const [date, setDate] = useState();
@@ -56,6 +57,7 @@ const SingleBlog = () => {
         <h1 className="text-[36px] font-[700] leading-[43.2px] text-[#004A80] pt-[80px] desktop:max-w-[354px] mb-[89px]">
           Explore our articles and events
         </h1>
+        <FilterCards />
       </div>
     </div>
   );

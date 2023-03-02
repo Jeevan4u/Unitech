@@ -4,10 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Circle from "../assist/Images/criclearrow.png";
 import { Navigation, Thumbs } from "swiper";
 import SwiperButton from "./SwiperButton";
+import { useNavigate } from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";
 // import cardImage1 from "../assist/Images/cardImage1.png";
 const Details = ({ details, left, center }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="container about-content flex flex-wrap px-10 py-10 tablet:flex-wrap  desktop:justify-around tablet:justify-center">
       <div className="About-conent w-[335px] px-3">
@@ -20,7 +23,10 @@ const Details = ({ details, left, center }) => {
         </h4>
         {details.button && (
           <div className="button pt-5 ">
-            <button className="border-solid border-[1px] border-red-600 py-[16px] px-[24px] text-red-600 font-[700] text-[18px] leading-[27px] border-r-2 tablet: py-[10px] px-[18px]">
+            <button
+              className="border-solid border-[1px] border-red-600 py-[16px] px-[24px] text-red-600 font-[700] text-[18px] leading-[27px] border-r-2 tablet: py-[10px] px-[18px]"
+              onClick={() => navigate(details.link)}
+            >
               {/* About Us */}
               {details.button}
             </button>

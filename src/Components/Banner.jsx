@@ -4,7 +4,7 @@ const Banner = ({ data }) => {
   return (
     <div className="banner-container">
       <div className="banner-img-container relative">
-        <img src={data.imgs} alt="" />
+        <img className="w-full" src={data.imgs} alt="" />
 
         <div className="img-overlay absolute h-full w-full top-0 left-0 bg-[#00000099] flex items-end desktop:pl-[149px] desktop:pb-[32px] tablet:pl-[80px] pb-[20px]">
           <div className="text-content text-white relative">
