@@ -38,6 +38,21 @@ const AboutImageGallery = () => {
       name: "Suraj Rai",
       pos: "CEO",
     },
+    {
+      imgs: aboutImg6,
+      name: "Suraj Rai",
+      pos: "CEO",
+    },
+    {
+      imgs: aboutImg6,
+      name: "Suraj Rai",
+      pos: "CEO",
+    },
+    {
+      imgs: aboutImg6,
+      name: "Suraj Rai",
+      pos: "CEO",
+    },
   ];
   return (
     <div className="Image-container desktop:px-[150px]">

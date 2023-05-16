@@ -8,7 +8,7 @@ import unitechlogoWhite from "../assist/Images/unitechlogowhite1.png";
 import Group from "../assist/Images/group.png";
 const Footer = () => {
   return (
-    <div className="container bg-[#004A80] overflow-hidden">
+    <div className=" bg-[#004A80] overflow-hidden">
       <div className="footer__container pt-[169px] max-w-[1200px] mx-auto">
         <div className="footer__contents grid place-items-center laptop:grid-cols-3 relative tablet:px-10 px-5">
           <div className="col-1 ">

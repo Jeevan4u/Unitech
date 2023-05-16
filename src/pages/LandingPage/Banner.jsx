@@ -23,7 +23,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="header-img-container tablet:before:top-[1%] before:right-[40%] after:bottom-[5%] ">
+        <div className="header-img-container tablet:before:top-[1%] before:right-[40%] before:bottom-[5%] before:z-10">
           <div className="img ">
             <img src={Maskimage} alt="" />
           </div>

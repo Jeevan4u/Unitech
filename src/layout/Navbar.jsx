@@ -25,22 +25,28 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`nav-items hidden justify-between items-center  w-[737px]  tablet:${
-              show &&
-              "block tablet:text-center  tablet:absolute tablet:h-screen tablet:w-screen tablet:bg-white"
-            } desktop:flex`}
+            className={`nav-items hidden justify-between items-center z-[9999] tablet:ransition-all tablet:duration-700 tablet:ease-in-out w-[737px] -translate-y-96 tablet:text-center tablet:absolute tablet:top-[100%] tablet:flex tablet:justify-around tablet:flex-col tablet:w-screen tablet:bg-white tablet:overflow-hidden ${
+              show && "tablet:translate-y-0"
+            } desktop:translate-y-0  desktop:flex-row desktop:relative`}
           >
             {navItems.map((items, i) => {
               return (
-                <ul className="nav-links appearance-none" key={i}>
-                  <Link to={items.link} className="nav-text ">
+                <ul
+                  className="nav-links appearance-none transition-all duration-700 ease-in-out"
+                  key={i}
+                >
+                  <Link
+                    to={items.link}
+                    className="nav-text transition-all duration-700 ease-in-out"
+                    onClick={() => setShow(false)}
+                  >
                     {items.title}
                   </Link>
                 </ul>
               );
             })}
           </div>
-          <div className="hamburger hidden tablet:block pt-[5px] z-[99999] desktop:hidden phone:block mr-5">
+          <div className="hamburger hidden tablet:block pt-[5px] z-[9999]  desktop:hidden phone:block mr-5">
             <img src={ham} alt="" onClick={() => setShow(!show)} />
           </div>
         </div>

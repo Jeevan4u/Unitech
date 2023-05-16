@@ -2,7 +2,7 @@ import React from "react";
 
 const Staytuned = () => {
   return (
-    <div className="container bg-[#E4F4FF]">
+    <div className=" bg-[#E4F4FF]">
       <div className="staytuned-container pt-[71px] pb-[74px]">
         <div className="sad flex justify-around items-center">
           <div className="topic">

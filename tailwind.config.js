@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     screens: {
           // => @media (min-width: 414px) { ... }
-      'tablet': '576px',
+      'tablet': '450px',
       // => @media (min-width: 576px) { ... }
 
       'laptop': '960px',

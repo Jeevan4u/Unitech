@@ -95,23 +95,33 @@ const FilterCards = () => {
         </h1>
         <div className="filter-cat flex gap-7 ">
           <h1
-            className={`${active === true && "text-[#ED1C24]"}`}
+            className={`${data === "All" && "text-[#ED1C24]"}`}
             onClick={() => {
               setData("All");
-              setActive(!active);
             }}
           >
             All
           </h1>
           <h1
+            className={`${data === "Branding" && "text-[#ED1C24]"}`}
             onClick={() => {
               setData("Branding");
             }}
           >
             /Branding
           </h1>
-          <h1 onClick={() => setData("Creative")}>/Creative</h1>
-          <h1 onClick={() => setData("Development")}>/Development</h1>
+          <h1
+            className={`${data === "Creative" && "text-[#ED1C24]"}`}
+            onClick={() => setData("Creative")}
+          >
+            /Creative
+          </h1>
+          <h1
+            className={`${data === "Development" && "text-[#ED1C24]"}`}
+            onClick={() => setData("Development")}
+          >
+            /Development
+          </h1>
         </div>
       </div>
       <div className="allcards flex flex-wrap gap-5 justify-center desktop:justify-evenly tablet:justify-around px-10">
